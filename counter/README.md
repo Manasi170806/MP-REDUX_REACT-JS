@@ -37,7 +37,7 @@ JavaScript ES6+
 
 CSS (Clean Styling & Animations)
 
-<h1>Counter App Output</h1>:<img width="1920" height="894" alt="Screenshot (68)" src="https://github.com/user-attachments/assets/ddd7dc3c-9e7b-4aa7-b7a3-49f5561414f8" />
+<h1>Counter App Output</h1><img width="1920" height="894" alt="Screenshot (68)" src="https://github.com/user-attachments/assets/ddd7dc3c-9e7b-4aa7-b7a3-49f5561414f8" />
 
 <h1>🚀 How to Use</h1>
 
@@ -49,7 +49,7 @@ See the current value update instantly on the screen.
 
 #ReactJS #ReduxToolkit #CounterApp #JavaScript #WebDevelopment #Frontend #OpenSource #CleanCode #LearnRedux #CodingJourney
 
-<h1>Counter App Output Video</h1> : https://github.com/user-attachments/assets/b9be6ed8-a6db-4a24-b9a5-646ecb83a911
+<h1>Counter App Output Video</h1>  https://github.com/user-attachments/assets/b9be6ed8-a6db-4a24-b9a5-646ecb83a911
 
 🎉 Thank you for checking out this project!
 
