@@ -1,141 +1,129 @@
-/* .container {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+/* Background Animation */
+body 
+{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(-45deg, #a1b2c3, #7c8a9a, #5c667f, #3e4a5a);
+  background-size: 400% 400%;
+  animation: gradientBG 6s ease infinite;
+  color: #f0f0f0;
 }
-
-h1 {
+@keyframes gradientBG 
+{
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.app-container 
+{
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 450px;
+  margin: 60px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #333; /* डार्क टेक्स्ट */
+}
+/* Title */
+.app-title 
+{
   text-align: center;
-  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
-
-.input-container {
+/* Input Section */
+.input-section 
+{
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
 }
-
-.input-container input {
+.task-input 
+{
   flex: 1;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
   outline: none;
+  color: #333;
 }
-
-.input-container input:focus {
-  border-color: #042460;
+.task-input::placeholder 
+{
+  color: #999;
 }
-
-.input-container button {
-  padding: 10px 16px;
-  background-color: #0788eb;
-  border: none;
+.task-input:focus 
+{
+  border-color: #5B657E;
+  box-shadow: 2px 2px 5px #5B657E;
+}
+/* Button */
+.add-btn 
+{
+  padding: 10px 15px;
+  background-color: #6c63ff;
   color: white;
-  font-size: 16px;
-  border-radius: 7px;
-  width: 20%;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
-.input-container button:hover {
-  background-color: #0b55e1;
+.add-btn:hover 
+{
+  background-color: #5848d1;
 }
-
-ul {
-  list-style-type: none;
+/* Task List */
+.task-list 
+{
+  list-style: none;
   padding: 0;
+  margin-top: 20px;
 }
-
-li {
+.task-item 
+{
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  background: #f8f8f8;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #333;
 }
-
-ul li {
-  background: #fff;
-  padding: 10px;
-  margin-bottom: 8px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  word-break: break-word;
-}
-
-.delete-btn {
-  padding: 4px 8px;
-  border: none;
-  color: white;
+.task-text 
+{
   cursor: pointer;
-  border-radius: 5px;
-  width: 18%;
-  margin-left: 8%;
-  background: #ff4d4d;
+  font-size: 16px;
 }
-
-
-.Edit-btn {
-  padding: 4px 8px;
+.task-text.completed 
+{
+  text-decoration: line-through;
+  color: #999;
+}
+/* Buttons in List */
+.btn-group 
+{
+  display: flex;
+  gap: 8px;
+}
+.edit-btn 
+{
+  background: none;
   border: none;
-  color: white;
   cursor: pointer;
-  width: 18%;
-  border-radius: 5px;
-  background: #ff4d4d;
+  font-size: 18px;
+  color: #6c63ff;
+  transition: color 0.2s ease;
 }
-
-.Edit-btn:hover {
-  background: #e60000;
-}
-
-.delete-btn:hover {
-  background: #e60000;
-} */
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.delete-btn
+{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #e71515;
+  transition: color 0.2s ease; 
 }
