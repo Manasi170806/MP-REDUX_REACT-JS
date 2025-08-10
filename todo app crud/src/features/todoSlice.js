@@ -24,34 +24,74 @@
 
 
 
-import { createSlice } from '@reduxjs/toolkit';
+// import { createSlice } from '@reduxjs/toolkit';
+
+// const initialState = {
+//   list: [],
+// };
+
+// const todoSlice = createSlice({
+//   name: 'todos',
+//   initialState,
+//   reducers: {
+//     addTodo: (state, action) => {
+//       state.list.push({ id: Date.now(), text: action.payload });
+//     },
+//     removeTodo: (state, action) => {
+//       const index = state.list.findIndex(todo => todo.id === action.payload);
+//       if (index !== -1) {
+//         state.list.splice(index, 1); // Remove using splice
+//       }
+//     },
+//     updateTodo: (state, action) => {
+//       const { id, newText } = action.payload;
+//       const todo = state.list.find(todo => todo.id === id);
+//       if (todo) {
+//         todo.text = newText;
+//       }
+//     },
+//   },
+// });
+
+// export const { addTodo, removeTodo, updateTodo } = todoSlice.actions;
+// export default todoSlice.reducer;
+
+
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-  list: [],
+  todos: []
 };
 
-const todoSlice = createSlice({
-  name: 'todos',
+export const todoSlice = createSlice({
+  name: "todo",
   initialState,
   reducers: {
     addTodo: (state, action) => {
-      state.list.push({ id: Date.now(), text: action.payload });
+      state.todos.push({
+        id: nanoid(),
+        text: action.payload,
+        completed: false
+      });
     },
-    removeTodo: (state, action) => {
-      const index = state.list.findIndex(todo => todo.id === action.payload);
-      if (index !== -1) {
-        state.list.splice(index, 1); // Remove using splice
-      }
+    deleteTodo: (state, action) => {
+      state.todos = state.todos.filter(todo => todo.id !== action.payload);
     },
     updateTodo: (state, action) => {
       const { id, newText } = action.payload;
-      const todo = state.list.find(todo => todo.id === id);
+      const todo = state.todos.find(todo => todo.id === id);
       if (todo) {
         todo.text = newText;
       }
     },
-  },
+    toggleComplete: (state, action) => {
+      const todo = state.todos.find(todo => todo.id === action.payload);
+      if (todo) {
+        todo.completed = !todo.completed;
+      }
+    }
+  }
 });
 
-export const { addTodo, removeTodo, updateTodo } = todoSlice.actions;
+export const { addTodo, deleteTodo, updateTodo, toggleComplete } = todoSlice.actions;
 export default todoSlice.reducer;
