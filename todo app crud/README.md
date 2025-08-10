@@ -42,6 +42,10 @@ JavaScript ES6+
 
 CSS (Animated Gradient Background + Clean UI Styling)
 
+<h1>Todo App Output</h1>
+
+<img width="1891" height="900" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/01e102d7-04f0-48b2-9e1f-3a4acff5e652" />
+
 <h1>🎯 How to Use</h1>
 
 **Add Tasks:** Type your task in the input box and click Add.
@@ -51,10 +55,6 @@ CSS (Animated Gradient Background + Clean UI Styling)
 **Complete Tasks:** Click on the task text itself to toggle its completion status.
 
 **Delete Tasks:** Use the 🗑️ Delete button to remove unwanted tasks.
-
-<h1>Todo App Output</h1>
-
-<img width="1891" height="900" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/01e102d7-04f0-48b2-9e1f-3a4acff5e652" />
 
 #ReactJS #ReduxToolkit #ToDoApp #Productivity #JavaScript #WebApp #OpenSource #CleanCode #ModernUI #TaskManagement #DeveloperLife
 
