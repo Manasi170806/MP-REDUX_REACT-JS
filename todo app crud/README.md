@@ -56,10 +56,9 @@ CSS (Animated Gradient Background + Clean UI Styling)
 
 <img width="1891" height="900" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/01e102d7-04f0-48b2-9e1f-3a4acff5e652" />
 
-
-🎉 Thank You for Checking Out This Project!
-
 #ReactJS #ReduxToolkit #ToDoApp #Productivity #JavaScript #WebApp #OpenSource #CleanCode #ModernUI #TaskManagement #DeveloperLife
 
 <h1>Todo App Output Video :</h1> https://drive.google.com/file/d/1hyKU_kT3gDmDUqs5kY2RUpk-P8yhfFL8/view?usp=sharing
+
+🎉 Thank You for Checking Out This Project!
 
