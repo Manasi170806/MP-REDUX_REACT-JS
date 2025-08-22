@@ -1,25 +1,109 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Wireless Mouse",
-      "price": 599,
-      "img": "https://via.placeholder.com/200x150.png?text=Mouse",
-      "description": "Smooth wireless mouse with ergonomic design."
+      "id": "202",
+      "title": "Gaming Laptop",
+      "price": 65999,
+      "img": "https://m.media-amazon.com/images/I/81Ne5qKmE8L._SL1500_.jpg",
+      "description": "High-performance laptop designed for gaming and multitasking."
     },
     {
-      "id": 2,
-      "title": "Bluetooth Headphones",
-      "price": 1999,
-      "img": "https://via.placeholder.com/200x150.png?text=Headphones",
-      "description": "High-quality sound with noise cancellation."
+      "id": "203",
+      "title": "Bluetooth Speaker",
+      "price": 2999,
+      "img": "https://m.media-amazon.com/images/I/71Zf9uUp+GL._SL1500_.jpg",
+      "description": "Portable Bluetooth speaker with deep bass and clear sound."
     },
     {
-      "id": 3,
-      "title": "Cotton T-Shirt",
-      "price": 499,
-      "img": "https://via.placeholder.com/200x150.png?text=T-Shirt",
-      "description": "Comfortable cotton t-shirt for casual wear."
+      "id": "204",
+      "title": "Smart Watch",
+      "price": 4999,
+      "img": "https://m.media-amazon.com/images/I/61gscZYmaoL._SL1500_.jpg",
+      "description": "Track fitness, heart rate, and notifications with style."
+    },
+    {
+      "id": "205",
+      "title": "Gaming Keyboard",
+      "price": 2499,
+      "img": "https://m.media-amazon.com/images/I/81LhPp7Lk1L._SL1500_.jpg",
+      "description": "RGB mechanical gaming keyboard with fast response keys."
+    },
+    {
+      "id": "206",
+      "title": "Wireless Earbuds",
+      "price": 3499,
+      "img": "https://m.media-amazon.com/images/I/61kYwQ0rTTL._SL1500_.jpg",
+      "description": "Compact and lightweight earbuds with noise cancellation."
+    },
+    {
+      "id": "207",
+      "title": "Running Shoes",
+      "price": 2999,
+      "img": "https://m.media-amazon.com/images/I/71D9ImsvEtL._UL1500_.jpg",
+      "description": "Lightweight and comfortable running shoes for daily workouts."
+    },
+    {
+      "id": "208",
+      "title": "Cotton Hoodie",
+      "price": 1299,
+      "img": "https://m.media-amazon.com/images/I/71mEsfAiEwL._UL1500_.jpg",
+      "description": "Soft cotton hoodie for casual wear in all seasons."
+    },
+    {
+      "id": "209",
+      "title": "Leather Wallet",
+      "price": 899,
+      "img": "https://m.media-amazon.com/images/I/71Gg+Qf+6zL._UL1500_.jpg",
+      "description": "Durable leather wallet with multiple compartments."
+    },
+    {
+      "id": "210",
+      "title": "Sunglasses",
+      "price": 699,
+      "img": "https://m.media-amazon.com/images/I/61R5cWmN4lL._UL1500_.jpg",
+      "description": "UV-protected sunglasses with stylish frame."
+    },
+    {
+      "id": "211",
+      "title": "Backpack",
+      "price": 1599,
+      "img": "https://m.media-amazon.com/images/I/81qpnqj1sHL._UL1500_.jpg",
+      "description": "Spacious and durable backpack for school or travel."
+    },
+    {
+      "id": "212",
+      "title": "Coffee Maker",
+      "price": 3499,
+      "img": "https://m.media-amazon.com/images/I/81E5pQltQZL._SL1500_.jpg",
+      "description": "Automatic coffee maker with multiple brewing modes."
+    },
+    {
+      "id": "213",
+      "title": "Electric Kettle",
+      "price": 1299,
+      "img": "https://m.media-amazon.com/images/I/61j17F1l3AL._SL1500_.jpg",
+      "description": "Fast-boiling electric kettle with stainless steel body."
+    },
+    {
+      "id": "214",
+      "title": "Microwave Oven",
+      "price": 8499,
+      "img": "https://m.media-amazon.com/images/I/81t2A8UouEL._SL1500_.jpg",
+      "description": "Compact microwave oven with multiple cooking options."
+    },
+    {
+      "id": "215",
+      "title": "Office Chair",
+      "price": 5999,
+      "img": "https://m.media-amazon.com/images/I/71fFzLBDVfL._SL1500_.jpg",
+      "description": "Ergonomic office chair with adjustable height and lumbar support."
+    },
+    {
+      "id": "216",
+      "title": "Wireless Keyboard",
+      "price": 1799,
+      "img": "https://m.media-amazon.com/images/I/71c5W9fx2+L._SL1500_.jpg",
+      "description": "Slim wireless keyboard with long battery life and smooth typing."
     }
   ]
 }
