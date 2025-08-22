@@ -4,13 +4,11 @@ body {
   margin: 0;
   padding: 0;
 }
-
 h1 {
   text-align: center;
   margin: 20px 0;
   color: #2d3436;
 }
-
 form {
   background: #fff;
   max-width: 600px;
@@ -19,7 +17,6 @@ form {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
-
 form input,
 form textarea,
 form button {
@@ -29,13 +26,11 @@ form button {
   outline: none;
   font-size: 14px;
 }
-
 form input:focus,
 form textarea:focus {
   border-color: #0984e3;
   box-shadow: 0 0 5px rgba(9,132,227,0.4);
 }
-
 form button {
   background: #0984e3;
   color: #fff;
@@ -44,19 +39,15 @@ form button {
   cursor: pointer;
   transition: background 0.3s;
 }
-
 form button:hover {
   background: #74b9ff;
 }
-
-/* Products grid */
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
 }
-
 .card {
   background: #fff;
   border-radius: 12px;
@@ -65,33 +56,27 @@ form button:hover {
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
-
 .card img {
   width: 100%;
   height: 160px;
   object-fit: cover;
   border-radius: 8px;
 }
-
 .card h3 {
   margin: 10px 0 5px;
   color: #2d3436;
 }
-
 .card p {
   margin: 5px 0;
 }
-
 .card .price {
   color: #27ae60;
   font-weight: bold;
 }
-
 .card button {
   margin: 5px;
   padding: 8px 14px;
@@ -101,15 +86,17 @@ form button:hover {
   font-size: 13px;
   transition: 0.3s;
 }
-
 .card .edit {
   background: #00b894;
   color: #fff;
 }
-.card .edit:hover { background: #55efc4; }
-
+.card .edit:hover { 
+  background: #55efc4; 
+}
 .card .delete {
   background: #d63031;
   color: #fff;
 }
-.card .delete:hover { background: #ff7675; }
+.card .delete:hover { 
+  background: #ff7675; 
+}
