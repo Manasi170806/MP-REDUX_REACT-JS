@@ -97,13 +97,6 @@
       "price": 5999,
       "img": "img/14.jpeg",
       "description": "Ergonomic office chair with adjustable height and lumbar support."
-    },
-    {
-      "id": "215",
-      "title": "Wireless Keyboard",
-      "price": 1799,
-      "img": "img/15.jpeg",
-      "description": "Slim wireless keyboard with long battery life and smooth typing."
     }
   ]
 }
