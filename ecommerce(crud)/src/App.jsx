@@ -33,12 +33,12 @@ function App() {
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: 20 }}>
       <h1 style={{ textAlign: "center" }}>🛒 E-Commerce CRUD</h1>
 
-      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 20 }}>
-        <input type="text" placeholder="Title" value={form.title} onChange={e => setForm({...form, title: e.target.value})} required />
-        <input type="number" placeholder="Price" value={form.price} onChange={e => setForm({...form, price: e.target.value})} required />
-        <input type="text" placeholder="Image URL" value={form.img} onChange={e => setForm({...form, img: e.target.value})} required />
-        <textarea placeholder="Description" value={form.description} onChange={e => setForm({...form, description: e.target.value})} required />
-        <button type="submit">{editingId ? "Update Product" : "Add Product"}</button>
+      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 25, marginBottom: 80 , width: 450, margin: "20px auto"}}>
+        <input type="text" placeholder="Title" value={form.title} onChange={e => setForm({...form, title: e.target.value})} required style={{height: 30, padding: 10, borderRadius: 5, border: "1px solid #464545ff",fontSize:"18px"}} />
+        <input type="number" placeholder="Price" value={form.price} onChange={e => setForm({...form, price: e.target.value})} required style={{height: 30, padding: 10, borderRadius: 5, border: "1px solid #464545ff",fontSize:"18px"}} />
+        <input type="text" placeholder="Image URL" value={form.img} onChange={e => setForm({...form, img: e.target.value})} required style={{height: 30, padding: 10, borderRadius: 5, border: "1px solid #464545ff",fontSize:"18px"}} />
+        <textarea placeholder="Description" value={form.description} onChange={e => setForm({...form, description: e.target.value})} required style={{height: 100, padding: 10, borderRadius: 5, border: "1px solid #464545ff",fontSize:"18px"}} />
+        <button type="submit" style={{padding: 10, borderRadius: 5, border: "none", background: "green", color: "white", cursor: "pointer",height:50,fontSize:"18px"}}>{editingId ? "Update Product" : "Add Product"}</button>
       </form>
 
       {loading ? <p>Loading...</p> :

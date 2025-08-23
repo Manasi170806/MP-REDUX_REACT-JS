@@ -8,60 +8,18 @@
       "description": "High-performance laptop designed for gaming and multitasking."
     },
     {
-      "id": "202",
-      "title": "Bluetooth Speaker",
-      "price": 2999,
-      "img": "img/02.jpeg",
-      "description": "Portable Bluetooth speaker with deep bass and clear sound."
-    },
-    {
-      "id": "203",
-      "title": "Smart Watch",
-      "price": 4999,
-      "img": "img/03.jpeg",
-      "description": "Track fitness, heart rate, and notifications with style."
-    },
-    {
-      "id": "204",
-      "title": "Gaming Keyboard",
-      "price": 2499,
-      "img": "img/04.jpeg",
-      "description": "RGB mechanical gaming keyboard with fast response keys."
-    },
-    {
       "id": "205",
       "title": "Wireless Earbuds",
-      "price": 3499,
+      "price": "3499",
       "img": "img/05.jpeg",
-      "description": "Compact and lightweight earbuds with noise cancellation."
-    },
-    {
-      "id": "206",
-      "title": "Running Shoes",
-      "price": 2999,
-      "img": "img/06.jpeg",
-      "description": "Lightweight and comfortable running shoes for daily workouts."
+      "description": "Compact and lightweight earbuds with noise cancellation..."
     },
     {
       "id": "207",
       "title": "Cotton Hoodie",
-      "price": 1299,
+      "price": "1300",
       "img": "img/07.jpeg",
       "description": "Soft cotton hoodie for casual wear in all seasons."
-    },
-    {
-      "id": "208",
-      "title": "Leather Wallet",
-      "price": 899,
-      "img": "img/08.jpeg",
-      "description": "Durable leather wallet with multiple compartments."
-    },
-    {
-      "id": "209",
-      "title": "Sunglasses",
-      "price": 699,
-      "img": "img/09.jpeg",
-      "description": "UV-protected sunglasses with stylish frame."
     },
     {
       "id": "210",
@@ -90,13 +48,6 @@
       "price": 8499,
       "img": "img/13.jpeg",
       "description": "Compact microwave oven with multiple cooking options."
-    },
-    {
-      "id": "214",
-      "title": "Office Chair",
-      "price": 5999,
-      "img": "img/14.jpeg",
-      "description": "Ergonomic office chair with adjustable height and lumbar support."
     }
   ]
 }
