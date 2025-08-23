@@ -19,6 +19,7 @@ A dynamic, single-page application (SPA) e-commerce frontend built entirely with
 **📸 Output Screenshots**
 
 <img width="1891" height="901" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/0beea119-ae21-4c9f-970d-80818228742f" />
+<hr>
 <img width="1900" height="897" alt="Screenshot (91)" src="https://github.com/user-attachments/assets/492b525c-19df-4508-879a-752d9c7af659" />
 
 **Output Video**
