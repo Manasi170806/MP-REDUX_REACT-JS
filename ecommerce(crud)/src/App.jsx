@@ -45,7 +45,7 @@ function App() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: 20 }}>
           {products.map(p => (
             <div key={p.id} style={{ border: "1px solid #ddd", borderRadius: 10, padding: 15, textAlign: "center" }}>
-              <img src={p.img} alt={p.title} onError={(e) => e.target.src="https://m.media-amazon.com/images/I/81Ne5qKmE8L._SL1500_.jpg"} style={{ width: "100%", height: 150, objectFit: "cover", borderRadius: 8 }} />
+              <img src={p.img} alt={p.title} style={{ width: "100%", height: 280, objectFit: "cover", borderRadius: 8 }} />
               <h3>{p.title}</h3>
               <p style={{ fontWeight: "bold", color: "green" }}>₹{p.price}</p>
               <p style={{ fontSize: 14, color: "#555" }}>{p.description}</p>
