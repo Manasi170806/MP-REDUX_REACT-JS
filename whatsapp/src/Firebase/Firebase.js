@@ -1,7 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
-
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBfeDVza1YUHXSglO7e50gQIIY_oMu8W6M",
@@ -13,26 +12,15 @@ const firebaseConfig = {
   measurementId: "G-433H5CQQHH"
 };
 
+// Initialize Firebase
+console.log('Initializing Firebase with project:', firebaseConfig.projectId);
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export const store = getFirestore(app);
+export const db = getFirestore(app);
 
-// import { initializeApp } from "firebase/app";
-// import { getAuth } from "firebase/auth";
-// import { getFirestore } from "firebase/firestore";
+// Test authentication connection
+console.log('Firebase Auth initialized:', auth.app.name);
+console.log('Firestore initialized:', db.app.name);
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyATxXsAn6QpW7TRc9LL0yk_KhUS1AjugIs",
-//   authDomain: "react-book-10am.firebaseapp.com",
-//   projectId: "react-book-10am",
-//   storageBucket: "react-book-10am.firebasestorage.app",
-//   messagingSenderId: "219388670787",
-//   appId: "1:219388670787:web:611169af1a86e86c2b35f6",
-//   measurementId: "G-JT2993KDXN",
-// };
-
-// const app = initializeApp(firebaseConfig);
-
-// export const auth = getAuth(app);
-// export const store = getFirestore(app);
+export default app;
