@@ -1,3 +1,4 @@
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { signOutUser } from '../../Slice/authSlice';
 
@@ -11,7 +12,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <h1>Chat App</h1>
+      <h1>💬 ChatApp</h1>
       <div className="user-info">
         <span>Welcome, {user?.displayName}</span>
         <button className="logout-btn" onClick={handleLogout}>

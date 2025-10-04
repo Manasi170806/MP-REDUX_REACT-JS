@@ -12,7 +12,6 @@ import {
 } from 'firebase/firestore';
 import { db } from '../Firebase/Firebase';
 
-// Fetch all users except current user
 export const fetchUsers = createAsyncThunk(
   'chat/fetchUsers',
   async (currentUserId, { rejectWithValue }) => {
@@ -28,21 +27,15 @@ export const fetchUsers = createAsyncThunk(
             id: doc.id,
             ...doc.data()
           }));
-          console.log('Fetched users:', users);
           resolve(users);
-        }, (error) => {
-          console.error('Error fetching users:', error);
-          rejectWithValue(error.message);
         });
       });
     } catch (error) {
-      console.error('Error in fetchUsers:', error);
       return rejectWithValue(error.message);
     }
   }
 );
 
-// Fetch messages between current user and selected user
 export const fetchMessages = createAsyncThunk(
   'chat/fetchMessages',
   async ({ currentUserId, selectedUserId }, { rejectWithValue }) => {
@@ -72,28 +65,39 @@ export const fetchMessages = createAsyncThunk(
   }
 );
 
-// Send a new message
 export const sendMessage = createAsyncThunk(
   'chat/sendMessage',
   async ({ text, senderId, receiverId }, { rejectWithValue }) => {
     try {
+      console.log('🔄 Sending message to Firestore...');
+      console.log('Text:', text);
+      console.log('Sender:', senderId);
+      console.log('Receiver:', receiverId);
+      
       const messageData = {
-        text,
-        senderId,
-        receiverId,
+        text: text,
+        senderId: senderId,
+        receiverId: receiverId,
         participants: [senderId, receiverId],
         timestamp: new Date()
       };
       
+      console.log('Message data being saved:', messageData);
+      
       const docRef = await addDoc(collection(db, 'messages'), messageData);
-      return { id: docRef.id, ...messageData };
+      console.log('✅ Message saved with ID:', docRef.id);
+      
+      return { 
+        id: docRef.id, 
+        ...messageData 
+      };
     } catch (error) {
+      console.error('❌ Error saving message:', error);
       return rejectWithValue(error.message);
     }
   }
 );
 
-// Update an existing message
 export const updateMessage = createAsyncThunk(
   'chat/updateMessage',
   async ({ messageId, newText }, { rejectWithValue }) => {
@@ -109,7 +113,6 @@ export const updateMessage = createAsyncThunk(
   }
 );
 
-// Delete a message
 export const deleteMessage = createAsyncThunk(
   'chat/deleteMessage',
   async (messageId, { rejectWithValue }) => {
@@ -122,7 +125,6 @@ export const deleteMessage = createAsyncThunk(
   }
 );
 
-// Chat slice
 const chatSlice = createSlice({
   name: 'chat',
   initialState: {
@@ -141,9 +143,6 @@ const chatSlice = createSlice({
     },
     clearMessages: (state) => {
       state.messages = [];
-    },
-    clearError: (state) => {
-      state.error = null;
     }
   },
   extraReducers: (builder) => {
@@ -155,6 +154,7 @@ const chatSlice = createSlice({
         state.messages = action.payload;
       })
       .addCase(sendMessage.fulfilled, (state, action) => {
+        console.log('📨 Adding message to Redux state:', action.payload);
         state.messages.push(action.payload);
       })
       .addCase(updateMessage.fulfilled, (state, action) => {
@@ -167,18 +167,9 @@ const chatSlice = createSlice({
       })
       .addCase(deleteMessage.fulfilled, (state, action) => {
         state.messages = state.messages.filter(msg => msg.id !== action.payload);
-      })
-      .addCase(fetchUsers.rejected, (state, action) => {
-        state.error = action.payload;
-      })
-      .addCase(fetchMessages.rejected, (state, action) => {
-        state.error = action.payload;
-      })
-      .addCase(sendMessage.rejected, (state, action) => {
-        state.error = action.payload;
       });
   }
 });
 
-export const { selectUser, clearSelectedUser, clearMessages, clearError } = chatSlice.actions;
+export const { selectUser, clearSelectedUser, clearMessages } = chatSlice.actions;
 export default chatSlice.reducer;
